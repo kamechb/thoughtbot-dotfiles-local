@@ -1,0 +1,54 @@
+syntax enable
+
+" support 256 color
+set t_Co=256
+set term=xterm-256color
+
+set background=dark
+" if has('gui_running')
+"   set background=light
+" else
+"   set background=dark
+" endif
+
+" colorscheme solarized
+" colorscheme Tomorrow
+colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night-Bright
+" colorscheme Tomorrow-Night-Eighties
+" colorscheme Tomorrow-Night-Blue
+
+set autoindent  " auto indentation
+set incsearch   " incremental search
+set nobackup    " no *~ backup files
+set copyindent  " copy the previous indentation on autoindenting
+set ignorecase  " ignore case when searching
+set smartcase   " ignore case if search pattern is all lowercase,case-sensitive otherwise
+set smarttab    " insert tabs on the start of a line according to context
+
+" move around tabs. conflict with the original screen top/bottom
+" comment them out if you want the original H/L
+" go to prev tab 
+map <S-H> gT
+" go to next tab
+map <S-L> gt
+
+" new tab
+map <C-t><C-t> :tabnew<CR>
+" close tab
+map <C-t><C-w> :tabclose<CR> 
+
+" ,/ turn off search highlighting
+nmap <leader>/ :nohl<CR>
+
+set cc=80
+
+" set clipboard=unnamed
+map op "+p
+map oy "+y
+
+" easy align
+vnoremap <silent> <Enter> :EasyAlign<cr>
+
+noremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+noremap <leader>' viw<esc>a'<esc>hbi'<esc>lel

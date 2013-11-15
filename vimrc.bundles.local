@@ -1,0 +1,5 @@
+" Bundle 'Lokaltog/vim-powerline'
+" Bundle 'stephenmckinney/vim-solarized-powerline'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/nerdtree'
+Bundle 'junegunn/vim-easy-align'
